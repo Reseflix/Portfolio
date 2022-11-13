@@ -1,0 +1,77 @@
+.port {
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter:  blur(20px) grayscale(50%);
+
+
+  .card {
+    width: 85%;
+    height: 90%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inherit;
+    flex-direction: row;
+  
+    .cardDiv{
+      width: auto;
+      height: 100%;
+      display: contents;
+
+
+      .cardMenu{
+        cursor: pointer;
+        width: 30px;
+        height: 100%;
+        max-width: 30px;
+        background-color: #231942;
+        padding: 15px 0;
+
+        display: flex;
+        align-content: space-between;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        p {
+          writing-mode: vertical-rl;
+          user-select: none;
+        }
+        &:hover {
+          background-color: #7209b7;
+        }
+      }
+
+      .cardContent {
+        width: 100%;
+        height: 100%;
+        max-width: 0%;
+        max-height: 100%;
+        transition: all 5s;
+        background-color: #341942;
+        display: none;
+      }
+    }
+
+  }
+
+  #activedCard {
+    
+
+    .cardMenu {
+      background-color: #7209b7;
+    }
+    .cardContent {
+      display: block;
+      transition: all 5s;
+      max-width: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+
+
