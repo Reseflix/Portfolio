@@ -1,0 +1,21 @@
+.sobre {
+    overflow-y: scroll;
+    height: inherit;
+    padding: 20px;
+
+    .divImg {
+        height: inherit;
+        max-height: inherit;
+    }
+
+    .informacoes {
+        background-color: rgba(0,0,0,0.2);
+        height: auto;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            list-style: none;
+        }
+    }
+}

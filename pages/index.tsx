@@ -3,12 +3,13 @@ import { AiFillHome, AiFillIdcard, AiFillTool, AiOutlineQuestion, AiTwotoneHeart
 import { useState } from 'react'
 import Inicio from '../components/pages/Inicio'
 import Habilidades from '../components/pages/habilidades'
+import Sobre from '../components/pages/sobre'
 
 export default function Home() {
 
   const menuList = [
     {text:'Inicio',icon:AiFillHome, content: <Inicio/>, color:'white', colordiv:'#8338ec'},
-    {text:'Sobre',icon:AiFillIdcard},
+    {text:'Sobre',icon:AiFillIdcard,  content: <Sobre/>},
     {text:'Projetos',icon:AiFillProject},
     {text:'Habilidades',icon:AiFillTool, content: <Habilidades/>},
     {text:'Futuro',icon:AiOutlineQuestion},
